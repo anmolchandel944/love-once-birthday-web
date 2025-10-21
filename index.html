@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Wish</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Hearts Container -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- First Screen -->
+  <div id="nameInputCard" class="card glass">
+    <h2>Hey Love 💖</h2>
+    <p>What's your name?</p>
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <button id="submitName">OK</button>
+  </div>
+
+  <!-- Second Screen -->
+  <div id="birthdayPage" class="hidden">
+    <div class="card glass">
+      <img src=" https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTMxc3Byem9kdWVmb3BjcDhnM2J5M24xeHFldnVhcnN5aTJtOHdwMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KztT2c4u8mYYUiMKdJ/giphy.gif" alt="Birthday Gif" class="gif"/>
+      <h2 id="typingText" class="typing"></h2>
+      <p id="messageBox" class="typing"></p>
+      <p id="nextMessage" class="typing"></p>
+    </div>
+  </div>
+
+  <!-- Surprise Card -->
+  <div id="surpriseCard" class="card glass hidden">
+    <img src="cute.gif" alt="Surprise" class="gif"/>
+    <h3 id="celebrateText"></h3>
+    <p>Your choice is:</p>
+    <div class="btn-group">
+      <button id="yesBtn">Absolutely, let's celebrate 🎉</button>
+      <button id="noBtn">Maybe another time 💬</button>
+    </div>
+  </div>
+
+  <!-- Celebration Card -->
+  <div id="finalCard" class="card glass hidden">
+    <img src="birthday-cake.gif" alt="Happy Birthday" class="gif"/>
+    <h2 id="finalText"></h2>
+    <button id="okBtn">OK Let's 💕</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
